@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "oneblockstorage",
+  "version": "${version}",
+  "name": "OneBlockStorage",
+  "description": "",
+  "authors": [
+    "mmm1245"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/OneBlockStorage/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "com.github.mmm1245.oneblockstorage.client.OneblockstorageClient"
+    ],
+    "main": [
+      "com.github.mmm1245.oneblockstorage.Oneblockstorage"
+    ]
+  },
+  "mixins": [
+    "oneblockstorage.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.10",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
